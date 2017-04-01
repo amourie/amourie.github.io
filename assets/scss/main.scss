@@ -1,0 +1,136 @@
+/*VARIABLES------------------------------------------ */
+/*fonts---------------------------------------------- */
+$font-heading: 'Montserrat', sans-serif;
+$font-body: 'Lato', sans-serif;
+
+/*colour palette-------------------------------------- */
+$ivory-black: #283140;
+$white: #FFF;
+$black: #000;
+$gold-leaf: #f3ca13;
+$sky-blue: #369ccd;
+$bright-orange: #e06104;
+$prussian-blue: #014d6f;
+
+/*MAIN STYLES ---------------------------------------- */
+body {
+  font-family: $font-body;
+  margin-bottom: 60px;
+  background-color: $white;
+  color: $ivory-black;
+  position: relative;
+  min-height: 100vh;
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+{
+  font-family: $font-heading;
+  text-transform: uppercase;
+}
+h1 {
+  color: $white;
+  font-size: 3em;
+  text-transform: uppercase;
+}
+p {
+  color: $ivory-black;
+  font-weight: bold;
+}
+header {
+  height: 5vw;
+  position: relative;
+  top: 0px;
+  background-color: $prussian-blue;
+  display: table;
+  width: 73%;
+}
+header h1 {
+	font-size: 0.9em;
+  text-align:center;
+  width: 100%;
+  border: solid 1px red;
+  text-transform: none;
+  margin: auto auto;
+}
+.header-container {
+  border: solid 1px red;
+    height: 50px;
+    display: table-cell;
+    vertical-align: middle;
+    margin: 1em;
+}
+.header-container-social {
+  float: right;
+  margin: auto auto;
+  display: table-cell;
+  vertical-align: middle;
+  margin: 1em;
+}
+main {
+  width: 73%;
+}
+.fa {
+	margin-right: 15px;
+	color: $gold-leaf;
+}
+
+/* section styles */
+
+section {
+  min-height: 400px;
+  border: solid 1px red;
+  background-color: $ivory-black;
+  color: $white;
+}
+section, section p {
+  color: $white;
+}
+.section-container {
+  padding: 1.5em;
+}
+
+/*footer---------------------------------------------------*/
+
+footer {
+  position: fixed;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  min-height: 100vh;
+  width: 27%;
+  background-color: $white;
+}
+.footer-container {
+  background-color: $white;
+  min-height: 100vh;
+  width: 90%;
+  margin: 0 auto;
+}
+.copy-right {
+  color: $bright-orange;
+}
+footer h1 {
+  color: $prussian-blue;
+}
+footer .profilePic {
+  position: relative;
+  left: 20px;
+  float:left;
+  display: inline-block;
+  border: solid 1px red;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  margin: 0 2em .875em auto;
+  border: 0.2em solid $ivory-black;
+  box-shadow: 0 0 0 0.5em $gold-leaf;
+  border-radius: 100%;
+}

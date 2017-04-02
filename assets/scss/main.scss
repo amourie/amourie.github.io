@@ -2,7 +2,7 @@
 /*fonts---------------------------------------------- */
 $font-heading: 'Montserrat', sans-serif;
 $font-body: 'Lato', sans-serif;
-
+$font-third: 'Fjalla One', sans-serif;
 /*colour palette-------------------------------------- */
 $ivory-black: #283140;
 $white: #FFF;
@@ -33,13 +33,17 @@ h5,
 }
 h1 {
   color: $white;
-  font-size: 3em;
+  font-size: 1.8em;
   text-transform: uppercase;
+
+
+  text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
 }
 p {
   color: $ivory-black;
   font-weight: bold;
 }
+/* header -----------------------------------------------*/
 header {
   height: 5vw;
   position: relative;
@@ -51,24 +55,31 @@ header {
 header h1 {
 	font-size: 0.9em;
   text-align:center;
-  width: 100%;
-  border: solid 1px red;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 400px;
+  width: 70%;
+  height: 100%;
+  float: left;
   text-transform: none;
   margin: auto auto;
 }
 .header-container {
-  border: solid 1px red;
-    height: 50px;
-    display: table-cell;
-    vertical-align: middle;
-    margin: 1em;
+  height: 50px;
+  vertical-align: middle;
+  margin: 1em;
 }
 .header-container-social {
-  float: right;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: right;
   margin: auto auto;
   display: table-cell;
   vertical-align: middle;
   margin: 1em;
+  width: 30%;
 }
 main {
   width: 73%;
@@ -82,17 +93,59 @@ main {
 
 section {
   min-height: 400px;
-  border: solid 1px red;
   background-color: $ivory-black;
   color: $white;
+  padding: 1.5em;
 }
 section, section p {
   color: $white;
 }
-.section-container {
-  padding: 1.5em;
+.section-container-content {
+  ;
+  display: flex;
+  justify-content: space-between;
+
+}
+.section-container[class^="section-container_"]
+{
+
+
+}
+section img {
+  border: 1px solid $ivory-black;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  width: 100%;
+
+}
+section ul {
+
+  li {
+    background-color: $gold-leaf;
+    color: $black;
+    list-style-type: none;
+    width: auto;
+    display: block;
+    float: left;
+    margin-right: 0.3em;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    padding: 0.4em;
+  }
+}
+.section-container_visual {
+  border: solid 1px red;
+  width: 30%;
+
 }
 
+.section-container_details {
+  border: solid 1px red;
+  width: 70%;
+
+}
 /*footer---------------------------------------------------*/
 
 footer {
@@ -116,6 +169,12 @@ footer {
 }
 footer h1 {
   color: $prussian-blue;
+  font-size: 1.8em;
+}
+footer h2 {
+  font-size: 1.1em;
+  box-shadow: none;
+
 }
 footer .profilePic {
   position: relative;
@@ -123,8 +182,8 @@ footer .profilePic {
   float:left;
   display: inline-block;
   border: solid 1px red;
-  width: 120px;
-  height: 120px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   background-repeat: no-repeat;
   background-position: center center;

@@ -13,18 +13,26 @@ $black: #000;
 $gold-leaf: #cfa902;
 $mustard-yellow: #cfa902;
 $sky-blue: #0285a1;
-$bright-orange: #ac641e;
+$burnt-copper: #b87333;
 $prussian-blue: #014d6f;
+
+/*mixins --------------------------------------------*/
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+
 
 /*MAIN STYLES ---------------------------------------- */
 body {
   font-family: $font-body;
-
   background-color: $sky-blue;
   color: $ivory-black;
   position: relative;
   min-height: 100vh;
-
   margin: 15px 15px;
   font-weight: normal;
 }
@@ -81,7 +89,7 @@ a:hover {
   float: right;
 }
 .high-light {
-  color: $bright-orange;
+  color: $burnt-copper;
 }
 .entity-highlight {
   color: $mustard-yellow;
@@ -100,9 +108,8 @@ header {
       justify-content: center;
       margin-right:15px;
       background-color: $prussian-blue;
-      -webkit-border-radius: 15px;
-      -moz-border-radius: 15px;
-      border-radius: 15px;
+       @include border-radius(15px);
+
       padding: 1em 1.8em;
             .header-container-intro {
               width: 80%;
@@ -132,15 +139,11 @@ section {
   background-color: $white;
   color: $ivory-black;
   padding: 1.5em;
-  -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
-  border-radius: 15px;
+  @include border-radius(15px);
   margin: 15px 15px 15px 0;
   img {
     border: 0.2em solid $gold-leaf;
-  /*  -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    border-radius: 20px;*/
+
     width: 100%;
   }
   p:first-child {
@@ -152,9 +155,7 @@ section {
 
     font-size: 1em;
     width: 10em;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;
+    @include border-radius(4px);
     padding: 0.5em;
     text-transform: uppercase;
     position: relative;
@@ -188,8 +189,7 @@ section {
             clear: both;
 
                     li {
-
-                      background-color: $bright-orange;
+                      background-color: $burnt-copper;
                       color: $white;
                       list-style-type: none;
                       width: auto;
@@ -197,9 +197,7 @@ section {
                       display: block;
                       width: inherit;
                       margin: 0 0.3em 0.3em 0;
-                      -webkit-border-radius: 4px;
-                      -moz-border-radius: 4px;
-                      border-radius: 4px;
+                      @include border-radius(4px);
                       padding: 0.4em;
                     }
           }
@@ -222,21 +220,16 @@ footer {
   bottom: 0;
   color: #FFF;
   min-height: 100vh;
-
   width: 22%;
-  -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
-  border-radius: 15px;
+  @include border-radius(15px);
   background-color: $prussian-blue;
     .footer-container {
-
       width: 90%;
       margin: 0 auto;
     }
     p {
       color: $white;
     }
-
     h1 {
       color: $mustard-yellow;
       font-size: 2.4em;
@@ -245,13 +238,7 @@ footer {
       font-size: 1.1em;
       box-shadow: none;
     }
-
 }
-
-
-
-
-
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
 

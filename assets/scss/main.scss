@@ -154,7 +154,6 @@ section {
   padding: 1.5em;
 
 
-
   @include border-radius(15px);
   margin: 15px 15px 15px 0;
 
@@ -202,13 +201,13 @@ section {
         margin-bottom: 2em;
 
               .section-container_visual {
-                width: 30%;
+                width: 50%;
                 margin: 0 0 0.5em;
 
               }
 
               .section-container_details {
-              width: 70%;
+              width: 50%;
               margin: 0 1.5em;
               ul {
                 padding: 0;

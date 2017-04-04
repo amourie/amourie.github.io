@@ -150,10 +150,10 @@ section {
     align-items: stretch;
     margin-bottom: 2em; }
     section .section-container-content .section-container_visual {
-      width: 30%;
+      width: 50%;
       margin: 0 0 0.5em; }
     section .section-container-content .section-container_details {
-      width: 70%;
+      width: 50%;
       margin: 0 1.5em; }
       section .section-container-content .section-container_details ul {
         padding: 0;
